@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Survey Form</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			Take a Survey!
+			<div id="survey">
+				<fieldset>
+					<legend>Survey</legend>
+					<form action="/submit" method="post">
+						<label for="name">Your Name:</label>
+						<input type="text" name="name" />
+						<label for="location">Dojo Location:</label>
+						<select name="location">
+							<option value="Chicago">Chicago</option>
+							<option value="Dallas">Dallas</option>
+							<option value="Los Angeles">Los Angeles</option>
+							<option value="Seattle">Seattle</option>
+							<option value="Silicon Valley">Silicon Valley</option>
+							<option value="Tulsa">Tulsa</option>
+							<option value="Washington DC">Washington DC</option>
+						</select>
+						<label for="language">Favorite Language: </label>
+						<select name="language">
+							<option value=".NET">.NET</option>
+							<option value="iOS Swift">iOS Swift</option>
+							<option value="Java">Java</option>
+							<option value="MEAN">MEAN</option>
+							<option value="Ruby On Rails">Ruby On Rails</option>
+						</select>
+						<label for="comments">Comments: </label>
+						<input type="textarea" name="comments" />
+						<input type="submit" value="submit"/>
+					</form>
+				</fieldset>
+
+			</div>
+		</div>
+	</body>
+</html>
